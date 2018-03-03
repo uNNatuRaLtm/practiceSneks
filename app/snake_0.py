@@ -1,6 +1,6 @@
 from base_snake import BaseSnake
 from brain import decide
-
+import json
 class Snake0(BaseSnake):
 
     def move(self, data):
@@ -19,5 +19,5 @@ class Snake0(BaseSnake):
     def taunt(self):
         return ""
 
-    def end(self):
+    def end(self,data):
         pass

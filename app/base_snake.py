@@ -16,5 +16,5 @@ class BaseSnake(object):
     def taunt(self):
         raise NotImplemented("this should be overridden on implementations of snakes")
 
-    def end(self):
+    def end(self,data):
         raise NotImplemented("this should be overridden on implementations of snakes")

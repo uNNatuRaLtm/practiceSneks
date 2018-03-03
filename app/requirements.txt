@@ -2,3 +2,5 @@ flask
 gevent==1.0.1
 greenlet==0.4.5
 gunicorn==19.2.1
+numpy
+json

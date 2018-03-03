@@ -1,6 +1,6 @@
 from brain import decide
 from snake_0 import Snake0
-
+import json
 
 class Snake1(Snake0):
 
@@ -20,5 +20,7 @@ class Snake1(Snake0):
     def taunt(self):
         return ""
 
-    def end(self):
+    def end(self, data):
+        with open(self.name()+'.txt', 'a') as file:
+            file.write(json.dumps(data))
         pass
